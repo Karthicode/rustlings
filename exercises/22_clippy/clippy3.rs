@@ -8,12 +8,12 @@ fn main() {
     // Assume that you don't know the value of `my_option`.
     // In the case of `Some`, we want to print its value.
     if my_option.is_none() {
-        println!("{}", my_option.unwrap());
+        println!("{:?}", my_option);
     }
 
     let my_arr = &[
-        -1, -2, -3
-        -4, -5, -6
+        -1, -2, -3,
+        -4, -5, -6,
     ];
     println!("My array! Here it is: {my_arr:?}");
 
